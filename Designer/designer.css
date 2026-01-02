@@ -21,6 +21,15 @@ a:hover {
 	opacity: 0.6;
 }
 
+.title{
+		font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	color: #dedede;
+	
+	margin-top: 0;
+}
+
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -190,17 +199,10 @@ a:hover {
 	transition: opacity 0.3s;
 }
 
-.projects {
-}
-
 .projects__title {
 	margin-bottom: 140px;
-	margin-top: 0;
 
-	font-weight: 700;
-	font-size: 36px;
-	text-align: center;
-	color: #dedede;
+
 }
 
 .projects__wrapperr {
@@ -224,3 +226,45 @@ a:hover {
 .projects .container {
 	margin-top: 200px;
 }
+
+
+
+.contact  {
+	margin-top: 200px;
+	margin-bottom: 120px;
+
+}
+
+.contact .container {
+	min-width: 520px;
+	text-align: center;
+
+}
+
+
+
+.contact__title {
+	margin-bottom: 24px;
+
+}
+
+.contact__text {
+	margin-bottom: 50px;
+	font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
