@@ -270,6 +270,30 @@ a:hover {
 .socials__img {
 	display: flex;
 }
+.footer__socials-link {
+   display: inline-block;
+   text-transform: 0.3s;
+	width: 30px;
+}
+
+.footer__socials-link:hover {
+transform: scale(1.1);
+}
+
+.footer__socials-link + .footer__socials-link{
+  margin-left: 10px;
+
+}
+
+.footer__list-item + .footer__list-item {
+margin-top: 15px;
+}
+
+.footer__socials {
+unicode-bidi: normal;
+margin-top: 16px;
+}
+
 /* 
 @media (max-width: 1000px) {
 
