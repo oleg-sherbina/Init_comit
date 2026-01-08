@@ -106,16 +106,16 @@ a:hover {
 
 .welcome__title {
 	margin-top: 0;
-	width: 500px;
+	width: 600px;
 	margin-bottom: 24px;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 54px;
 	line-height: 1.19;
 	color: #dedede;
 }
 
 .welcome__text {
-	width: 395px;
+	width: 550px;
 	margin-bottom: 80px;
 }
 
