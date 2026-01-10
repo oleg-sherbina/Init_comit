@@ -194,6 +194,7 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
+
 .work:hover .work__name {
 	opacity: 1;
 	transition: opacity 0.3s;
