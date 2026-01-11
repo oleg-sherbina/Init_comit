@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+   @font-face {
+   font-family:"c";
+   src: url("font/Noto_Sans.zip") format("truetype");
+   font-style: normal;
+   font-weight: 900;
+
+}
+
+body{
+   margin: 0;
+   background-color: #000;
+   color: #fff;
+   font-family: "Noto_Sans ", sans-serif;
+   font-style: 18px;
+   overflow-x: hidden;
+   }
+
+
+   
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   font-family: "Montserrat ", sans-serif; ;
+}
+h2{
+   font-style: 51px;
+}
+a{
+   color: #fff;
+   text-decoration: none;
+}
+a:hover {
+   opacity: 0.8;
+}
+a:active {
+   opacity: 1;
+}
+
+p{
+   margin: 0;
+}
+
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+  
+   
+}
+.header .container {
+   display: flex;
+      align-items: center;
+      gap: 110px;
+
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+
+}
+
+.header__logo {
+   
+
+}
+
+.logo-img {
+
+}
+
+.logo-text {
+
+}
+
+.header-login {
+   display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-weight: 400;
+      
+}
+
+main {
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome {
+   
+   padding-bottom: 50px;
+  
+}
+
+.welcome-container {
+   position: relative;
+}
+
+
+.welcome-container::after {
+   content:"";
+   width: 660px;
+   height: 790px;
+
+   position: absolute;
+   right: -170px;
+   top: -240px;
+   z-index: -10;
+
+   transform: rotate(-105deg);
+
+   background-image: url(./NoTab-img/bg-welcome.svg);
+   background-size: contain   ;
+   background-repeat: no-repeat;
+}
+
+
+.welcome__row {
+   display: flex;
+   align-items: center;
+  
+   padding-right: 30px;
+   margin-bottom: 30px;
+   min-height: 700px;
+
+}
+
+.welcome__desc {}
+
+.welcome-title {
+
+   margin-bottom: 120px;
+   font-style: 64px;
+   line-height: 1.09;
+
+
+}
+
+.welcome-text {
+   position: relative;
+   font-style: 20px;
+   padding-left: 130px;
+   width: 380px;
+
+
+}
+
+.welcome-text::before {
+   content: "";
+   width: 125px;
+   height: 125px;
+   position: absolute;
+   left: 20px;
+   bottom: 50%;
+   z-index: -10;
+   background: rgba(96, 92, 234, 0.5);
+   filter: blur(50px);
+}
+
+.welcome-text::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 55px;
+   width: 142px;
+   height: 4px;
+   z-index: -5;
+   background-color: #fff;
+   transform: rotate(120deg);
+}
+
+
+
+.welcome-img {
+   width: 450px;
+   position: absolute;
+
+   right: 40px;
+   top: -50px;
+   z-index: -5;
+
+}
+
+.welcome__cta{
+   padding-right: 60px;
+}
+
+.cta {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.cta-text {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-style: 35px;
+
+}
+
+.cta-links {
+   display: flex;
+   gap: 30px;
+
+}
+
+.cta-link {
+
+}
+
+.cta-img {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mission {
+   padding: 150px 85px;
+   position: relative;
+
+}
+
+
+
+
+
+.mission-container {
+  
+
+}
+
+.mission-img {
+   transform: rotate(90deg)translate(-43%);
+   position: absolute;
+   top: 0;
+   right: 57%;
+   z-index: -1;
+
+}
+
+.mission-desc {
+   width: 320px;
+   margin-left: auto;
+
+
+}
+
+.mission-title {
+   margin-bottom: 30px;
+   
+}
+
+.mission-title::after {
+   content: '';
+   position: absolute;
+      left: 1500px;
+         bottom: 200px;
+
+   z-index: -1;
+
+   width: 85px;
+   height: 85px;
+
+   background: #f101bf;
+   opacity: 0.7;
+   filter: blur(50px);
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+.mission-text {
+
+
+}
+
+
+
+
+
+
+
+
+.common {
+   margin-top: 200px;
+   padding: 50px 0;
+
+}
+
+.common:nth-child(even) .container {
+   flex-direction: row-reverse;
+}
+
+
+.common-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+
+}
+
+.common-img {}
+
+.common-col {
+   max-width: 410px;
+
+}
+
+.common-title {
+   margin-bottom: 20px;
+
+}
+
+.common-text {}
+
+
+
+
+.scanner {
+   background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("./NoTab-img/bg-scanner.jpg");
+   background-size: cover;
+
+}
+
+
+.code {
+   background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("./NoTab-img/bg-code.jpg");
+   background-size: cover;
+   background-position: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+   padding: 100px 0 50px ;
+   overflow: hidden;
+}
+
+
+ .footer__container {
+   position: relative;
+ }
+
+.footer__container::before {
+   content: '';
+   position: absolute;
+   left: -170px;
+   bottom: -200px;
+   z-index: -1;
+
+   width: 400px;
+   height: 400px;
+
+   background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
+   opacity: 56%;
+   filter: blur(125px);
+   transform: rotate(6deg) ;
+}
+
+
+
+
+
+.footer__cta {
+   margin-bottom: 125px;
+   flex-direction: column;
+   gap: 30px;
+
+}
+
+
+.footer__cta .cta-text {
+   font-style: 24px;
+
+
+
+}
+
+
+.footer__cta .cta-img {
+   height: 80px;
+}
+
+.footer__cta .cta-link {
+   gap: 60px;
+
+}
+
+
+
+.cta-text {
+
+
+}
+
+
+
+.cta-links {
+
+
+}
+
+
+
+.cta-link {}
+
+
+
+.cta-img {}
+
+
+
+.footer__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer__row > * {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+
+
+.foote__content {}
+
+
+
+.footer__logo-link {
+   display: inline-block;
+   margin-bottom: 15px;
+
+
+}
+
+
+
+.footer__logo {}
+
+
+
+
+.footer__contact {
+   margin-bottom: 15px;
+
+
+
+}
+
+
+
+.footer__copy {}
+
+
+
+.footer__links {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+
+
+.footer__link {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
