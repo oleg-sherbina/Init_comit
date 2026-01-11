@@ -1,3 +1,10 @@
+html,
+body {
+	overflow-x: hidden;
+}
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #202020;
 	color: #959595;
@@ -66,6 +73,10 @@ a:hover {
 	padding: 0 15px;
 }
 
+.burger-menu {
+	display: none;
+}
+
 .header {
 	padding: 20px 0;
 	background: rgba(50, 50, 50, 0.7);
@@ -75,6 +86,10 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.github__icon {
+	width: 40px;
+	height: 40px;
 }
 
 .logo {
@@ -194,10 +209,30 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
-
 .work:hover .work__name {
 	opacity: 1;
 	transition: opacity 0.3s;
+}
+
+.content .container {
+	margin-top: 80px;
+	max-width: 950px;
+}
+
+.welcome__text.experience--text {
+	width: 950px;
+}
+
+.job__position {
+	font-weight: 600;
+	font-size: 24px;
+}
+.experience {
+	opacity: 0.3;
+}
+
+.company {
+	color: #fb6d3a;
 }
 
 .projects__title {
@@ -232,7 +267,7 @@ a:hover {
 }
 
 .contact .container {
-	min-width: 520px;
+	max-width: 720px;
 	text-align: center;
 }
 
@@ -272,27 +307,26 @@ a:hover {
 	display: flex;
 }
 .footer__socials-link {
-   display: inline-block;
-   text-transform: 0.3s;
+	display: inline-block;
+	text-transform: 0.3s;
 	width: 30px;
 }
 
 .footer__socials-link:hover {
-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-.footer__socials-link + .footer__socials-link{
-  margin-left: 10px;
-
+.footer__socials-link + .footer__socials-link {
+	margin-left: 10px;
 }
 
 .footer__list-item + .footer__list-item {
-margin-top: 15px;
+	margin-top: 15px;
 }
 
 .footer__socials {
-unicode-bidi: normal;
-margin-top: 16px;
+	unicode-bidi: normal;
+	margin-top: 16px;
 }
 
 /* 
@@ -307,6 +341,9 @@ margin-top: 16px;
 }
 
 @media (max-width: 950px) {
+	.welcome__text.experience--text {
+		width: 800px;
+	}
 	.welcome {
 		margin-top: 70px;
 	}
@@ -333,6 +370,9 @@ margin-top: 16px;
 }
 
 @media (max-width: 850px) {
+	.welcome__text.experience--text {
+		width: 700px;
+	}
 	.projects__image {
 		height: 300px;
 		width: 300px;
@@ -350,12 +390,18 @@ margin-top: 16px;
 }
 
 @media (max-width: 770px) {
+	.welcome__text.experience--text {
+		width: 650px;
+	}
 	.welcome__title {
 		font-size: 36px;
 	}
 }
 
 @media (max-width: 700px) {
+	.welcome__text.experience--text {
+		width: 550px;
+	}
 	.footer .container {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -364,6 +410,9 @@ margin-top: 16px;
 }
 
 @media (max-width: 650px) {
+	.welcome__text.experience--text {
+		max-width: 450px;
+	}
 	.projects__image {
 		width: 100%;
 		height: 360px;
@@ -378,9 +427,123 @@ margin-top: 16px;
 }
 
 @media (max-width: 500px) {
+	.welcome__text.experience--text {
+		max-width: 400px;
+	}
+
+	.header {
+		position: relative;
+	}
+	.header--mobile .header__nav {
+		display: flex;
+		align-self: center;
+		flex-wrap: wrap;
+		gap: 20px 30px;
+		justify-content: center;
+	}
+	.header--mobile .container {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	.burger-menu {
+		display: block;
+		border-color: transparent;
+		padding: 0;
+		border: none;
+		position: absolute;
+		top: 29px;
+		right: 15px;
+	}
+	.burger-menu__icon {
+		height: 30px;
+		width: 40px;
+		object-fit: contain;
+		object-position: center;
+	}
+
+	.header__nav {
+		display: none;
+	}
+	.welcome__img {
+		width: 240px;
+		height: 240px;
+	}
+	.btn {
+		padding: 16px 20px;
+	}
+	.work__btn {
+		letter-spacing: 1em;
+		gap: 0;
+		margin-bottom: 40px;
+	}
+	.work__name {
+		font-size: 28px;
+	}
+
+	.works__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 25px;
+		padding-top: 70px;
+	}
+
+	.works {
+		margin-top: 100px;
+	}
+	.work {
+		height: 300px;
+		position: relative;
+	}
+	.work:nth-child(odd) {
+		margin-top: -50px;
+	}
+
+	.projects__image {
+		width: 200px;
+		height: 200px;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.product__title {
+		margin-bottom: 35px;
+	}
+	.contact__title {
+		margin-bottom: 12px;
+	}
+	.contact .container {
+		max-width: 350px;
+	}
+	.contact__text {
+		font-size: 18px;
+	}
+}
+@media (max-width: 450px) {
+	.welcome__text.experience--text {
+		max-width: 350px;
+	}
+	.projects__image {
+		width: 150px;
+		height: 150px;
+	}
 }
 
-@media (max-width: 000px) {
+@media (max-width: 420px) {
+	.welcome__text.experience--text {
+		max-width: 300px;
+	}
+	.welcome__title {
+		font-size: 26px;
+	}
 }
-@media (max-width: 000px) {
+@media (max-width: 350px) {
+	.welcome__text.experience--text {
+		max-width: 250px;
+	}
+	.projects__image {
+		width: 100px;
+		height: 100px;
+	}
 }

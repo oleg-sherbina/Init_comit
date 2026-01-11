@@ -9,17 +9,20 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header ">
 		<div class="container">
-			<a href="/index.html" class="logo">
-				<img src="./designer.img/=" alt="logo">
-				Logo Here
+			<a target="_blank" href="https://github.com/oleg-sherbina?tab=overview&from=2026-01-01&to=2026-01-10"
+				class="logo">
+				<img class="github__icon" src="./designer.img/github.png" alt="logo">GitHub
 			</a>
 			<nav class="header__nav">
 				<a href="#!" class="heager__link">Home</a>
-				<a href="#!" class="heager__link">Work</a>
-				<a href="#!" class="heager__link">Contact</a>
+				<a href="#works" class="heager__link">Work</a>
+				<a href="#Contact" class="heager__link">Contact</a>
 			</nav>
+			<button class="burger-menu" type="button">
+				<img class="burger-menu__icon" src="./designer.img/free-icon-open-menu-5392911.png" alt="">
+			</button>
 		</div>
 	</header>
 	<main class="main">
@@ -42,7 +45,7 @@
 				<img src="./designer.img/photo_2026-01-08_15-40-52.jpg" alt="" class="welcome__img">
 			</div>
 		</section>
-		<section class="works">
+		<section class="works" id="works">
 			<div class="container">
 				<button class="work__btn" type="button">
 					<img class="works__icon" src="/Designer/designer.img/" alt="">
@@ -68,6 +71,47 @@
 				</div>
 			</div>
 		</section>
+		<section class="content">
+			<div class="container">
+				<div class="experience__section">
+					<h2 class="welcome__title">Work Experience</h2>
+				</div>
+				<p class="welcome__text experience--text">I don’t have official work experience yet; however, I worked on a
+					joint project with a partner, which gave me basic teamwork skills. I have completed online courses. I am
+					interested in remote work and have experience in effective remote collaboration.<span class="experience">
+						(Since I wrote the text in English, online translators sometimes place pronouns incorrectly.) </span>
+				</p>
+				<div class="experience__section">
+					<h3 class="job__position"> Project <span class="company"> "Burger"</span>
+					</h3>
+					<ul class="experience__duties">
+						<li class="experience__duty">Mastered semantic HTML5 for structuring web pages effectively.
+						</li>
+						<li class="experience__duty">Acquired skills in adapting web content for various devices, including
+							mobile phones, tablets, and desktops, ensuring proper display and user-friendly experience.
+						</li>
+						<li class="mexperience__duty">Improved proficiency in CSS, including Flexbox and Grid, tocreate
+							responsive and visually engaging designs.</li>
+					</ul>
+					<h3 class="job__position"> Project <span class="company">"Velocity"</span>
+					</h3>
+					<ul class="experience__duties">
+						<li class="experience__duty">Familiarized myself with the JavaScript syntax.</li>
+						<li class="experience__duty">Gained experience in crafting cross-browser compatible and
+							mobile-friendly interfaces.</li>
+						<li class="experience__duty">Enhanced understanding of best practices in web development, suchas
+							clean and maintainable code.</li>
+					</ul>
+					<h3 class="job__position"> Project <span class="company"> "NoTab"</span>
+					</h3>
+					<ul class="experience__duties">
+						<li class="experience__duty">Studied CSS in depth, including element positioning and working with
+							images
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		<sectiom class="projects">
 			<div class="container">
 				<h2 class="title projects__title">Tech Skills</h2>
@@ -90,17 +134,19 @@
 				</div>
 			</div>
 		</sectiom> -->
-		<!-- <section class="contact">
+		<section class="contact" id="Contact">
 			<div class="container">
-				<h2 class="title contact__title">1232</h2>
-				<p class="contact__text">asdfkjhgf</p>
+				<h2 class="title contact__title">Education</h2>
+				<p class="contact__text">I completed my studies at Kherson Specialized School No. 27.
+					I am currently studying at Kherson Polytechnic Vocational College in my second year,
+					majoring in F7 “Computer Engineering.”</p>
 				<a class="btn contact__btn" href="mailto:olejka.ua2008@gmail.com">olejka.ua2008@gmail.com</a>
 			</div>
-		</section> -->
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<p class="footer__copy"> <span> Oleg Shcherbina </span> </p>
+			<p class="footer__copy">January 2026 <span> Oleg Shcherbina </span> Kherson </p>
 			<div class="socials">
 				<div class="footer__socials">
 					<!-- <a class="footer__socials-link" href="https://t.me/IvanTex_p20" target="_blank">
@@ -115,6 +161,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./Designer.js"></script>
 </body>
 
 </html>
